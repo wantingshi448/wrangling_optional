@@ -30,3 +30,25 @@ wrangling\_optional/
 
 
 
+\## How to run locally
+
+
+
+```bash
+
+\# 1) Activate env and cd to repo root
+
+conda activate fun\_ds
+
+cd ~/projects/wrangling\_optional  # Windows: cd %USERPROFILE%\\projects\\wrangling\_optional
+
+
+
+\# 2) Generate the household-level table
+
+python -c "from src.orchestrator import generate\_household\_level\_data; print(generate\_household\_level\_data(4,42).to\_string(index=False))"
+
+
+
+
+
